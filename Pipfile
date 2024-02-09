@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 python-dotenv = "*"
 disnake = "*"
+pynacl = "*"
+youtube-dl = "*"
+asyncio = "*"
 
 [dev-packages]
 

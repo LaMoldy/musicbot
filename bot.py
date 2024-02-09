@@ -16,6 +16,7 @@ command_sync_flags.sync_commands_debug = True
 intents = discord.Intents.default()
 intents.messages = True
 intents.message_content = True
+intents.voice_states = True
 
 # Sets the bot activity
 activity = discord.Activity(name="to Music", type=discord.ActivityType.listening)
