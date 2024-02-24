@@ -15,6 +15,10 @@ class General(commands.Cog):
     async def author(self, interaction: discord.ApplicationCommandInteraction) -> None:
         await interaction.response.send_message("I was created by LaMoldy")
 
+    @commands.slash_command(name="version", description="Displays the version of the bot")
+    async def author(self, interaction: discord.ApplicationCommandInteraction) -> None:
+        await interaction.response.send_message("I am currently running version: 0.1.0v")
+
     @commands.slash_command(name="reload", description="Reloads the commands")
     @commands.default_member_permissions(administrator=True)
     async def reload(self, interaction: discord.ApplicationCommandInteraction) -> None:
