@@ -19,9 +19,11 @@ class General(commands.Cog):
     @commands.default_member_permissions(administrator=True)
     async def reload(self, interaction: discord.ApplicationCommandInteraction) -> None:
         load_cogs(self.bot, True)
-        await interaction.response.send_message("Reloading all of the cogs",
-                                                ephemeral = True,
-                                                delete_after = 5)
+        await interaction.response.send_message(
+            "Reloading all of the cogs",
+            ephemeral = True,
+            delete_after = 5
+        )
 
 def setup(bot: commands.InteractionBot) -> None:
     bot.add_cog(General(bot))
